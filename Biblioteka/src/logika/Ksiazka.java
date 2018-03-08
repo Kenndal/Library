@@ -1,6 +1,10 @@
 package logika;
 
+import wyjatki.DodawanieException;
+import wyjatki.StanException;
+
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Ksiazka implements Serializable {
     // podstatwowe zmienne
@@ -13,12 +17,15 @@ public class Ksiazka implements Serializable {
 // zmienne dodatkowe
 
     // konstruktor książki
-    public Ksiazka(String nazwa, String gatunek, String autor, boolean stan) {
-        this.nazwa = nazwa;
-        this.gatunek = gatunek;
-        this.autor = autor;
-        this.stan = stan;
-
+    public Ksiazka(String nazwa, String gatunek, String autor, boolean stan) throws DodawanieException {
+        if(!Objects.equals(nazwa, "") && !Objects.equals(autor, "") && !Objects.equals(gatunek, "") ) {
+            this.nazwa = nazwa;
+            this.gatunek = gatunek;
+            this.autor = autor;
+            this.stan = stan;
+        }
+        else
+            throw new DodawanieException("Wypełnij wszystkie pola!");
     }
 
     // gettery do zmiennych podstawowych
@@ -34,10 +41,14 @@ public class Ksiazka implements Serializable {
         return autor;
     }
 
-    public boolean isStan() {
+    public Boolean isStan() {
         return stan;
     }
-
+    public void isStanCheck() throws StanException{
+        if(!stan){
+            throw new StanException("Książka jest już wypożyczona!");
+        }
+    }
     public String getIndeks() {
         return indeks_ksiazki.toString();
     }
@@ -51,10 +62,20 @@ public class Ksiazka implements Serializable {
     }
 
     public void wypozyczenie(){
-        stan = false;
+        if(stan) {
+           stan =false;
+        }
     }
 
     public void zwrot(){
         stan = true;
+    }
+
+    public String isStanString(){
+        if(!stan){
+            return "Wypożyczona";
+        }
+        else
+            return "Dostępna";
     }
 }

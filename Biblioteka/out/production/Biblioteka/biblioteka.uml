@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+<<<<<<< .mine
+    <node x="249.27332171034084" y="468.0">GUI.PanelCzytelnikaGUI</node>
+    <node x="449.050206043956" y="224.0">logika.Katalog</node>
+    <node x="675.4404761904763" y="0.0">wyjatki.StanException</node>
+    <node x="21.5" y="224.0">wyjatki.UsuwanieException</node>
+    <node x="745.050206043956" y="224.0">wyjatki.SzukanieException</node>
+    <node x="399.5590359960552" y="381.0">logika.Biblioteka</node>
+    <node x="822.050206043956" y="468.0">GUI.WypożyczeniaGUI</node>
+    <node x="458.10189313891226" y="97.0">logika.Ksiazka</node>
+    <node x="250.83592032967022" y="224.0">logika.Czytelnik</node>
+    <node x="585.050206043956" y="224.0">logika.Obserwator</node>
+    <node x="263.1309523809524" y="0.0">wyjatki.DodawanieException</node>
+    <node x="376.38353937728925" y="585.0">GUI.BibliotekaGUI</node>
+||||||| .r842
+    <node x="967.8095238095239" y="1845.0">GUI.PanelCzytelnikaGUI</node>
+    <node x="570.8329539508112" y="656.0">logika.Katalog</node>
+    <node x="15.529414293189802" y="0.0">wyjatki.StanException</node>
+    <node x="93.52264334305153" y="737.0">wyjatki.SzukanieException</node>
+    <node x="432.7036742169396" y="1127.0">logika.Biblioteka</node>
+    <node x="112.09128728414453" y="1858.5">GUI.WypożyczeniaGUI</node>
+    <node x="560.1044142931898" y="107.0">logika.Ksiazka</node>
+    <node x="901.8329539508112" y="494.0">logika.Czytelnik</node>
+    <node x="310.7511830006729" y="723.5">logika.Obserwator</node>
+    <node x="569.8544142931898" y="0.0">wyjatki.DodawanieException</node>
+    <node x="460.8345163340062" y="2016.0">GUI.BibliotekaGUI</node>
+=======
+    <node x="577.0" y="581.0">GUI.PanelCzytelnikaGUI</node>
+    <node x="294.0" y="581.0">logika.Katalog</node>
+    <node x="775.0" y="876.0">wyjatki.StanException</node>
+    <node x="390.0" y="876.0">wyjatki.UsuwanieException</node>
+    <node x="585.0" y="876.0">wyjatki.SzukanieException</node>
+    <node x="0.0" y="0.0">logika.Biblioteka</node>
+    <node x="0.0" y="581.0">logika.Ksiazka</node>
+    <node x="0.0" y="876.0">GUI.WypożyczeniaGUI</node>
+    <node x="408.0" y="0.0">logika.Czytelnik</node>
+    <node x="789.5" y="0.0">logika.Obserwator</node>
+    <node x="187.0" y="876.0">wyjatki.DodawanieException</node>
+    <node x="734.0" y="101.0">GUI.BibliotekaGUI</node>
+>>>>>>> .r1260
+  </nodes>
+  <notes />
+  <edges>
+<<<<<<< .mine
+    <edge source="logika.Ksiazka" target="wyjatki.StanException">
+      <point x="28.0" y="-18.5" />
+      <point x="542.1018931389123" y="77.0" />
+      <point x="714.6904761904763" y="77.0" />
+      <point x="-39.25" y="18.5" />
+    </edge>
+    <edge source="GUI.PanelCzytelnikaGUI" target="logika.Czytelnik">
+      <point x="-15.833333333333371" y="-18.5" />
+      <point x="328.43998837700747" y="361.0" />
+      <point x="276.9787774725274" y="361.0" />
+      <point x="-34.85714285714283" y="18.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="logika.Czytelnik">
+      <point x="-41.785714285714334" y="-18.5" />
+      <point x="422.77332171034084" y="321.0" />
+      <point x="329.26449175824166" y="321.0" />
+      <point x="17.428571428571445" y="18.5" />
+    </edge>
+    <edge source="GUI.WypożyczeniaGUI" target="logika.Biblioteka">
+      <point x="-45.5" y="-18.5" />
+      <point x="867.550206043956" y="438.0" />
+      <point x="520.2733217103408" y="438.0" />
+      <point x="55.714285714285666" y="18.5" />
+    </edge>
+    <edge source="GUI.WypożyczeniaGUI" target="wyjatki.SzukanieException">
+      <point x="-15.166666666666742" y="-18.5" />
+      <point x="897.8835393772893" y="448.0" />
+      <point x="884.550206043956" y="448.0" />
+      <point x="46.5" y="18.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="wyjatki.DodawanieException">
+      <point x="-71.0769230769231" y="-18.5" />
+      <point x="382.30661630036616" y="565.0" />
+      <point x="0.0" y="565.0" />
+      <point x="0.0" y="57.0" />
+      <point x="280.1309523809524" y="57.0" />
+      <point x="-85.0" y="18.5" />
+    </edge>
+    <edge source="logika.Czytelnik" target="logika.Ksiazka">
+      <point x="40.666666666666686" y="-18.5" />
+      <point x="352.5025869963369" y="184.0" />
+      <point x="486.10189313891226" y="184.0" />
+      <point x="-28.0" y="18.5" />
+    </edge>
+    <edge source="GUI.PanelCzytelnikaGUI" target="wyjatki.DodawanieException">
+      <point x="-79.16666666666674" y="-18.5" />
+      <point x="265.1066550436741" y="448.0" />
+      <point x="11.0" y="448.0" />
+      <point x="11.0" y="67.0" />
+      <point x="314.1309523809524" y="67.0" />
+      <point x="-51.0" y="18.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="logika.Ksiazka">
+      <point x="32.5" y="-18.5" />
+      <point x="497.0590359960552" y="331.0" />
+      <point x="574.550206043956" y="331.0" />
+      <point x="574.550206043956" y="194.0" />
+      <point x="530.9018931389122" y="194.0" />
+      <point x="16.799999999999955" y="18.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="wyjatki.UsuwanieException">
+      <point x="-60.35714285714289" y="-18.5" />
+      <point x="404.2018931389123" y="341.0" />
+      <point x="164.75" y="341.0" />
+      <point x="47.75" y="18.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="logika.Katalog">
+      <point x="23.214285714285666" y="-18.5" />
+      <point x="487.77332171034084" y="321.0" />
+      <point x="544.8835393772894" y="321.0" />
+      <point x="38.33333333333337" y="18.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="wyjatki.UsuwanieException">
+      <point x="-59.23076923076928" y="-18.5" />
+      <point x="394.15277014651997" y="555.0" />
+      <point x="69.25" y="555.0" />
+      <point x="-47.75" y="18.5" />
+    </edge>
+    <edge source="GUI.WypożyczeniaGUI" target="logika.Ksiazka">
+      <point x="45.5" y="-18.5" />
+      <point x="958.550206043956" y="448.0" />
+      <point x="952.550206043956" y="448.0" />
+      <point x="952.550206043956" y="174.0" />
+      <point x="553.3018931389123" y="174.0" />
+      <point x="39.200000000000045" y="18.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="logika.Obserwator">
+      <point x="51.071428571428555" y="-18.5" />
+      <point x="515.6304645674837" y="351.0" />
+      <point x="655.050206043956" y="351.0" />
+      <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="GUI.WypożyczeniaGUI">
+      <point x="35.53846153846155" y="-18.5" />
+      <point x="488.9220009157508" y="535.0" />
+      <point x="867.550206043956" y="535.0" />
+      <point x="-45.5" y="18.5" />
+    </edge>
+    <edge source="GUI.WypożyczeniaGUI" target="wyjatki.DodawanieException">
+      <point x="75.83333333333326" y="-18.5" />
+      <point x="988.8835393772893" y="448.0" />
+      <point x="971.7002060439559" y="448.0" />
+      <point x="971.7002060439559" y="67.0" />
+      <point x="450.1309523809524" y="67.0" />
+      <point x="85.0" y="18.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="wyjatki.StanException">
+      <point x="71.0769230769231" y="-18.5" />
+      <point x="524.4604624542123" y="565.0" />
+      <point x="1056.943559805579" y="565.0" />
+      <point x="1056.943559805579" y="57.0" />
+      <point x="793.1904761904763" y="57.0" />
+      <point x="39.25000000000003" y="18.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="logika.Biblioteka">
+      <point x="0.0" y="-18.5" />
+      <point x="453.38353937728925" y="555.0" />
+      <point x="460.77332171034084" y="555.0" />
+      <point x="460.77332171034084" y="448.0" />
+      <point x="464.5590359960552" y="448.0" />
+      <point x="0.0" y="18.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="GUI.PanelCzytelnikaGUI">
+      <point x="-23.692307692307736" y="-18.5" />
+      <point x="429.6912316849815" y="525.0" />
+      <point x="391.77332171034084" y="525.0" />
+      <point x="47.5" y="18.5" />
+    </edge>
+    <edge source="logika.Czytelnik" target="wyjatki.DodawanieException">
+      <point x="-40.66666666666663" y="-18.5" />
+      <point x="271.1692536630036" y="154.0" />
+      <point x="309.04761904761904" y="154.0" />
+      <point x="309.04761904761904" y="77.0" />
+      <point x="348.1309523809524" y="77.0" />
+      <point x="-17.0" y="18.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="wyjatki.DodawanieException">
+      <point x="-13.928571428571445" y="-18.5" />
+      <point x="450.6304645674837" y="291.0" />
+      <point x="383.3359203296702" y="291.0" />
+      <point x="383.3359203296702" y="77.0" />
+      <point x="382.1309523809524" y="77.0" />
+      <point x="17.0" y="18.5" />
+    </edge>
+    <edge source="logika.Katalog" target="logika.Ksiazka">
+      <point x="28.75" y="-18.5" />
+      <point x="535.300206043956" y="204.0" />
+      <point x="519.7018931389123" y="204.0" />
+      <point x="5.600000000000023" y="18.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="logika.Ksiazka">
+      <point x="59.23076923076928" y="-18.5" />
+      <point x="512.6143086080585" y="555.0" />
+      <point x="1045.943559805579" y="555.0" />
+      <point x="1045.943559805579" y="164.0" />
+      <point x="564.5018931389122" y="164.0" />
+      <point x="50.39999999999998" y="18.5" />
+    </edge>
+    <edge source="logika.Ksiazka" target="wyjatki.DodawanieException">
+      <point x="-28.0" y="-18.5" />
+      <point x="486.10189313891226" y="77.0" />
+      <point x="416.1309523809524" y="77.0" />
+      <point x="51.0" y="18.5" />
+    </edge>
+    <edge source="GUI.PanelCzytelnikaGUI" target="logika.Ksiazka">
+      <point x="-47.5" y="-18.5" />
+      <point x="296.77332171034084" y="438.0" />
+      <point x="223.0" y="438.0" />
+      <point x="223.0" y="164.0" />
+      <point x="463.7018931389123" y="164.0" />
+      <point x="-50.39999999999998" y="18.5" />
+    </edge>
+||||||| .r842
+    <edge source="logika.Ksiazka" target="wyjatki.StanException">
+      <point x="-78.0" y="-153.5" />
+      <point x="638.1044142931898" y="57.0" />
+      <point x="133.2794142931898" y="57.0" />
+      <point x="39.25" y="18.5" />
+    </edge>
+    <edge source="GUI.PanelCzytelnikaGUI" target="logika.Czytelnik">
+      <point x="26.75" y="-45.5" />
+      <point x="1155.0595238095239" y="1825.0" />
+      <point x="1197.5595238095239" y="1825.0" />
+      <point x="1197.5595238095239" y="1107.0" />
+      <point x="1221.6186682365255" y="1107.0" />
+      <point x="116.28571428571422" y="261.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="logika.Czytelnik">
+      <point x="173.8461538461538" y="-329.0" />
+      <point x="832.5498280630934" y="1097.0" />
+      <point x="1047.190096807954" y="1097.0" />
+      <point x="-58.14285714285711" y="261.5" />
+    </edge>
+    <edge source="GUI.WypożyczeniaGUI" target="logika.Biblioteka">
+      <point x="49.5" y="-32.0" />
+      <point x="260.5912872841445" y="1815.0" />
+      <point x="464.9893885026538" y="1815.0" />
+      <point x="-193.71428571428572" y="329.0" />
+    </edge>
+    <edge source="GUI.WypożyczeniaGUI" target="wyjatki.SzukanieException">
+      <point x="-16.5" y="-32.0" />
+      <point x="194.59128728414453" y="1805.0" />
+      <point x="140.02264334305153" y="1805.0" />
+      <point x="-46.5" y="18.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="wyjatki.DodawanieException">
+      <point x="-121.5" y="-126.5" />
+      <point x="501.3345163340062" y="1986.0" />
+      <point x="54.02264334305153" y="1986.0" />
+      <point x="54.02264334305153" y="67.0" />
+      <point x="586.8544142931898" y="67.0" />
+      <point x="-85.0" y="18.5" />
+    </edge>
+    <edge source="logika.Czytelnik" target="logika.Ksiazka">
+      <point x="0.0" y="-261.5" />
+      <point x="1105.3329539508113" y="454.0" />
+      <point x="794.1044142931898" y="454.0" />
+      <point x="78.0" y="153.5" />
+    </edge>
+    <edge source="GUI.PanelCzytelnikaGUI" target="wyjatki.DodawanieException">
+      <point x="133.75" y="-45.5" />
+      <point x="1262.0595238095239" y="1825.0" />
+      <point x="1358.9829539508114" y="1825.0" />
+      <point x="1358.9829539508114" y="67.0" />
+      <point x="756.8544142931898" y="67.0" />
+      <point x="85.0" y="18.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="logika.Ksiazka">
+      <point x="-69.53846153846155" y="-329.0" />
+      <point x="589.165212678478" y="1057.0" />
+      <point x="529.0079539508113" y="1057.0" />
+      <point x="529.0079539508113" y="454.0" />
+      <point x="638.1044142931898" y="454.0" />
+      <point x="-78.0" y="153.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="logika.Katalog">
+      <point x="69.53846153846155" y="-329.0" />
+      <point x="728.2421357554011" y="1067.0" />
+      <point x="829.999620617478" y="1067.0" />
+      <point x="103.66666666666674" y="99.5" />
+    </edge>
+    <edge source="GUI.WypożyczeniaGUI" target="logika.Ksiazka">
+      <point x="16.5" y="-32.0" />
+      <point x="227.59128728414453" y="1805.0" />
+      <point x="290.0226433430515" y="1805.0" />
+      <point x="290.0226433430515" y="444.0" />
+      <point x="606.9044142931899" y="444.0" />
+      <point x="-109.19999999999999" y="153.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="logika.Obserwator">
+      <point x="-173.84615384615387" y="-329.0" />
+      <point x="484.85752037078566" y="1087.0" />
+      <point x="402.7511830006729" y="1087.0" />
+      <point x="0.0" y="32.0" />
+    </edge>
+    <edge source="GUI.WypożyczeniaGUI" target="wyjatki.DodawanieException">
+      <point x="-82.5" y="-32.0" />
+      <point x="128.59128728414453" y="1825.0" />
+      <point x="65.02264334305153" y="1825.0" />
+      <point x="65.02264334305153" y="77.0" />
+      <point x="620.8544142931898" y="77.0" />
+      <point x="-51.0" y="18.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="GUI.WypożyczeniaGUI">
+      <point x="-67.5" y="-126.5" />
+      <point x="555.3345163340061" y="1966.0" />
+      <point x="260.5912872841445" y="1966.0" />
+      <point x="49.5" y="32.0" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="wyjatki.StanException">
+      <point x="-148.5" y="-126.5" />
+      <point x="474.3345163340062" y="1996.0" />
+      <point x="0.0" y="1996.0" />
+      <point x="0.0" y="57.0" />
+      <point x="54.7794142931898" y="57.0" />
+      <point x="-39.25" y="18.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="logika.Biblioteka">
+      <point x="13.5" y="-126.5" />
+      <point x="636.3345163340061" y="1996.0" />
+      <point x="631.9179599312254" y="1996.0" />
+      <point x="631.9179599312254" y="1815.0" />
+      <point x="658.7036742169396" y="1815.0" />
+      <point x="0.0" y="329.0" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="GUI.PanelCzytelnikaGUI">
+      <point x="94.5" y="-126.5" />
+      <point x="717.3345163340061" y="1976.0" />
+      <point x="1208.5595238095239" y="1976.0" />
+      <point x="80.25" y="45.5" />
+    </edge>
+    <edge source="logika.Czytelnik" target="wyjatki.DodawanieException">
+      <point x="135.66666666666663" y="-261.5" />
+      <point x="1240.9996206174778" y="474.0" />
+      <point x="1230.7710809598566" y="474.0" />
+      <point x="1230.7710809598566" y="77.0" />
+      <point x="722.8544142931898" y="77.0" />
+      <point x="51.0" y="18.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="wyjatki.DodawanieException">
+      <point x="-104.30769230769232" y="-329.0" />
+      <point x="554.3959819092472" y="1067.0" />
+      <point x="505.2511830006729" y="1067.0" />
+      <point x="505.2511830006729" y="87.0" />
+      <point x="654.8544142931898" y="87.0" />
+      <point x="-17.0" y="18.5" />
+    </edge>
+    <edge source="logika.Katalog" target="logika.Ksiazka">
+      <point x="-77.75" y="-99.5" />
+      <point x="648.5829539508112" y="474.0" />
+      <point x="700.5044142931899" y="474.0" />
+      <point x="-15.600000000000023" y="153.5" />
+    </edge>
+    <edge source="GUI.BibliotekaGUI" target="logika.Ksiazka">
+      <point x="148.5" y="-126.5" />
+      <point x="771.3345163340061" y="1996.0" />
+      <point x="1380.9829539508114" y="1996.0" />
+      <point x="1380.9829539508114" y="434.0" />
+      <point x="856.5044142931897" y="434.0" />
+      <point x="140.39999999999986" y="153.5" />
+    </edge>
+    <edge source="GUI.PanelCzytelnikaGUI" target="logika.Ksiazka">
+      <point x="80.25" y="-45.5" />
+      <point x="1208.5595238095239" y="1815.0" />
+      <point x="1319.3329539508113" y="1815.0" />
+      <point x="1319.3329539508113" y="444.0" />
+      <point x="825.3044142931899" y="444.0" />
+      <point x="109.19999999999993" y="153.5" />
+    </edge>
+    <edge source="logika.Ksiazka" target="wyjatki.DodawanieException">
+      <point x="78.0" y="-153.5" />
+      <point x="794.1044142931898" y="87.0" />
+      <point x="688.8544142931898" y="87.0" />
+      <point x="17.0" y="18.5" />
+    </edge>
+=======
+>>>>>>> .r1260
+    <edge source="GUI.BibliotekaGUI" target="logika.Obserwator">
+<<<<<<< .mine
+      <point x="23.692307692307736" y="-18.5" />
+      <point x="477.075847069597" y="525.0" />
+      <point x="697.3721224288532" y="525.0" />
+      <point x="697.3721224288532" y="351.0" />
+      <point x="701.7168727106227" y="351.0" />
+      <point x="46.66666666666674" y="18.5" />
+||||||| .r842
+      <point x="-40.5" y="-126.5" />
+      <point x="582.3345163340061" y="1956.0" />
+      <point x="363.1972639605293" y="1956.0" />
+      <point x="363.1972639605293" y="1107.0" />
+      <point x="341.41784966733957" y="1107.0" />
+      <point x="-61.333333333333314" y="32.0" />
+=======
+      <point x="0.0" y="-102.5" />
+      <point x="0.0" y="25.5" />
+>>>>>>> .r1260
+    </edge>
+<<<<<<< .mine
+    <edge source="GUI.BibliotekaGUI" target="logika.Czytelnik">
+      <point x="-47.38461538461547" y="-18.5" />
+      <point x="405.9989239926738" y="545.0" />
+      <point x="238.77332171034084" y="545.0" />
+      <point x="238.77332171034084" y="361.0" />
+      <point x="259.55020604395594" y="361.0" />
+      <point x="-52.28571428571428" y="18.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="wyjatki.SzukanieException">
+      <point x="60.35714285714289" y="-18.5" />
+      <point x="524.9161788531981" y="361.0" />
+      <point x="791.550206043956" y="361.0" />
+      <point x="-46.5" y="18.5" />
+    </edge>
+    <edge source="GUI.PanelCzytelnikaGUI" target="logika.Biblioteka">
+      <point x="47.5" y="-18.5" />
+      <point x="391.77332171034084" y="448.0" />
+      <point x="408.8447502817695" y="448.0" />
+      <point x="-55.714285714285666" y="18.5" />
+    </edge>
+||||||| .r842
+    <edge source="GUI.BibliotekaGUI" target="logika.Czytelnik">
+      <point x="121.5" y="-126.5" />
+      <point x="744.3345163340061" y="1986.0" />
+      <point x="1369.9829539508114" y="1986.0" />
+      <point x="1369.9829539508114" y="1107.0" />
+      <point x="1279.7615253793826" y="1107.0" />
+      <point x="174.42857142857144" y="261.5" />
+    </edge>
+    <edge source="logika.Biblioteka" target="wyjatki.SzukanieException">
+      <point x="-208.61538461538464" y="-329.0" />
+      <point x="450.08828960155495" y="1097.0" />
+      <point x="233.02264334305153" y="1097.0" />
+      <point x="46.5" y="18.5" />
+    </edge>
+    <edge source="GUI.PanelCzytelnikaGUI" target="logika.Biblioteka">
+      <point x="-80.25" y="-45.5" />
+      <point x="1048.0595238095239" y="1815.0" />
+      <point x="852.4179599312253" y="1815.0" />
+      <point x="193.71428571428567" y="329.0" />
+    </edge>
+=======
+>>>>>>> .r1260
+  </edges>
+<<<<<<< .mine
+  <settings layout="Hierarchic Group" zoom="0.9" x="780.7777777777777" y="381.3333333333333" />
+  <SelectedNodes />
+||||||| .r842
+  <settings layout="Hierarchic Group" zoom="0.9" x="499.7777777777777" y="370.3333333333333" />
+  <SelectedNodes />
+=======
+  <settings layout="Hierarchic Group" zoom="0.9" x="500.8888888888889" y="644.1111111111111" />
+  <SelectedNodes>
+    <node>GUI.PanelCzytelnikaGUI</node>
+  </SelectedNodes>
+>>>>>>> .r1260
+<<<<<<< .mine
+  <Categories />
+||||||| .r842
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+=======
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+>>>>>>> .r1260
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

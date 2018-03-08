@@ -1,10 +1,12 @@
 package logika;
 
 import logika.Ksiazka;
+import wyjatki.DodawanieException;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Czytelnik implements Serializable {
     // zmienne podstawowe
@@ -15,15 +17,16 @@ public class Czytelnik implements Serializable {
     private String indeks_czytelnika;
     private Boolean posiadanieKsiazek;
     private Map<String, Ksiazka> wypozyczone_ksiazki = new HashMap<String, Ksiazka>();
-
-    // dodakowe zmienne
-
     // konstruktor
-    public Czytelnik(String imie, String nazwisko, String data_urodzenia, String numer_telefonu) {
-        this.imie = imie;
-        this.nazwisko = nazwisko;
-        this.data_urodzenia = data_urodzenia;
-        this.numer_telefonu = numer_telefonu;
+    public Czytelnik(String imie, String nazwisko, String data_urodzenia, String numer_telefonu) throws DodawanieException {
+        if(!Objects.equals(imie, "") && !Objects.equals(nazwisko, "") && !Objects.equals(data_urodzenia, "") && !Objects.equals(numer_telefonu, "")) {
+            this.imie = imie;
+            this.nazwisko = nazwisko;
+            this.data_urodzenia = data_urodzenia;
+            this.numer_telefonu = numer_telefonu;
+        }
+        else
+            throw new DodawanieException("Wypełnij wszystkie pola!");
     }
 
     // gettery
@@ -55,46 +58,47 @@ public class Czytelnik implements Serializable {
         return posiadanieKsiazek;
     }
 
-    public void setImie(String imie) {
-        this.imie = imie;
+    public void setImie(String imie) throws DodawanieException {
+        if(!Objects.equals(imie,"")) {
+            this.imie = imie;
+        }
+        else
+            throw new DodawanieException("Wypełnij pole Imie!");
     }
 
-    public void setNazwisko(String nazwisko) {
-        this.nazwisko = nazwisko;
+    public void setNazwisko(String nazwisko) throws DodawanieException {
+        if(!Objects.equals(nazwisko,"")) {
+            this.nazwisko = nazwisko;
+        }
+        else
+            throw new DodawanieException("Wypełnij pole Nazwisko!");
     }
 
-    public void setData_urodzenia(String data_urodzenia) {
-        this.data_urodzenia = data_urodzenia;
+    public void setData_urodzenia(String data_urodzenia)throws DodawanieException {
+        if(!Objects.equals(data_urodzenia,"")) {
+            this.data_urodzenia = data_urodzenia;
+        }
+        else
+            throw new DodawanieException("Wypelnij pole Data Urodzenia!");
     }
 
-    public void setNumer_telefonu(String numer_telefonu) {
-        this.numer_telefonu = numer_telefonu;
-    }
-
-    public void setIndeks_czytelnika(String indeks_czytelnika) {
-        this.indeks_czytelnika = indeks_czytelnika;
+    public void setNumer_telefonu(String numer_telefonu) throws DodawanieException {
+        if(!Objects.equals(numer_telefonu,"")) {
+            this.numer_telefonu = numer_telefonu;
+        }
+        else
+            throw new DodawanieException("Wypełnij pole Numer Telefonu!");
     }
 
     public void setPosiadanieKsiazek(Boolean posiadanieKsiazek) {
         this.posiadanieKsiazek = posiadanieKsiazek;
     }
 
-    public void setWypozyczone_ksiazki(Map<String, Ksiazka> wypozyczone_ksiazki) {
-        this.wypozyczone_ksiazki = wypozyczone_ksiazki;
-    }
-
     protected void doddaj_indeks_czytelnika(String indeks){
         indeks_czytelnika = indeks;
     }
-/*
-    // metody (wypozyczenia i zwroty)
 
-    //byle metody
-    public void wypozyczeniebyle(Ksiazka ksiazka){
-        wypozyczone_ksiazki.put(ksiazka.getNazwa(), ksiazka);
-        setPosiadanieKsiazek();
-    }
-*/
+    // metody (wypozyczenia i zwroty)
 
     public void wypozyczenie(String nazwaKsiazki, Ksiazka ksiazka) {
         wypozyczone_ksiazki.put(nazwaKsiazki, ksiazka);
@@ -119,6 +123,14 @@ public class Czytelnik implements Serializable {
             posiadanieKsiazek = false;
         else
             posiadanieKsiazek = true;
+    }
+
+    public String getPosiadanieKsiazekString(){
+        if(posiadanieKsiazek){
+            return "Tak";
+        }
+        else
+            return "Nie";
     }
 
 }
